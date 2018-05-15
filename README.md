@@ -1,1 +1,0 @@
-# thevegasvortechs.github.io
