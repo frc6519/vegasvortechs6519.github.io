@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>Vegas Vortechs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicons.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,p,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+h3 { font-weight: 600;margin-bottom: 0;}
+</style>
+<body>
+<div class="container padding-64">
+<div class="content center">
+<img class="topimg" src="images/Logo.png" alt="Logo" style="float: left; width: 10%;margin-top: 1px;margin-bottom: 1px;">
+<img class="topimg" src="images/text.png" alt="TextLogo" style="width: 90%;margin-top: 15px;margin-bottom: 15px;">
+ </div>
+<div class="content padding-16">
+    <div class="row">
+        <div class="column"><a class="nodec" href="about.html"><p class="center barthing">About Us</p></a></div>
+        <div class="column"><a class="nodec" href="gallery.html"><p class="center barthing">Gallery</p></a></div>
+        <div class="column"><a class="nodec" href="lessons.html"><p class="center barthing">Experience</p></a></div>
+        <div class="column"><a class="nodec" href="contact.html"><p class="center barthing">Contact</p></a></div>
+    </div>
+</div>
+<div class="content padding-16">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/banner1.jpg" style="width:100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/banner2.jpg" style="width:100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/banner3.jpg" style="width:100%;">
+        </div>
+    </div>
+    <br>
+<div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+</div>
+</div> 
+<div class="content">
+<h3>Mission Statement</h3>
+<p class="text">As a team, our mission is to promote awareness and participation in robotics, ensure interest in STEAM all while practicing gracious professionalism both on the field and in the community.</p>
+</div>
+<div class="content">
+<h3>First Robotics</h3>
+<p class="text">Our mission is to inspire young people to be science and technology leaders, by engaging them in exciting mentor-based programs that build science, engineering and technology skills, that inspire innovation, and that foster well-rounded life capabilities including self-confidence, communication, and leadership.</p>
+</div>
+<div class="content">
+<h3>FRC 2018 Challenge</h3>
+<p class="text">FIRST® POWER UPSM, the 2018 FIRST® Robotics Competition game, includes two alliances of video
+game characters and their human operators who are trapped in an arcade game. Both alliances are
+working to defeat the boss in order to escape!</p>
+</div>
+
+</div>
+  <footer class="padding-64 light-grey center" id="footer">
+    <div class="">
+        <a href="#"><img src="images/fb.png" class="media"></a>
+        <a href="#"><img src="images/ig.png" class="media"></a>
+        <p style="font-size: 15px;">© 2018 The Vegas Vortechs</p>
+      </div>
+  </footer>
+</body>
+    
+    
+    
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000);
+}
+    
+</script>
+    
+    
+</html>
